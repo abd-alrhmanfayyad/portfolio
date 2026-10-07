@@ -138,13 +138,43 @@ nav a:hover {
     border: 1px solid var(--accent);
 }
 
+footer {
+    border-top: solid 1px var(--border);
+    text-align: center;
+    color:var(--text-muted);
+    font-size: 14px;
+    padding: 24px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+
+}
+
+.footer-links a {
+
+    text-decoration: none;
+    color: var(--text-muted);
+    transition: 300ms;
+
+}
+
+.footer-links a:hover {
+    color: var(--accent);
+    font-weight: 600;
+}
+
 @media (min-width: 768px) {
     .navbar {
         flex-direction: row;
         justify-content: space-between;
     }
+
     .hero h1 {
-    font-size: 32px;
-    line-height: 1.5;
-}
+        font-size: 40px;
+      
+    }
 }
