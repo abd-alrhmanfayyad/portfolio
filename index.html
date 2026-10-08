@@ -107,15 +107,75 @@
                 </div>
             </div>
         </section>
-        <section id="projects">
+        <section id="projects" class="section">
+            <p class="section-label">$ ls projects/</p>
             <h2>Projects</h2>
+
+            <div class="projects-grid">
+                <article class="project-card">
+
+                    <img src="images/jordan-nav.webp" alt="Jordan Navigation System running in the terminal" width="800"
+                        height="450" class="project-img">
+
+                    <div class="project-header">
+                        <h3>Jordan Navigation System</h3>
+                        <span class="project-status">Web version coming soon</span>
+                    </div>
+                    <p class="project-desc">A console app that plans trips between Jordanian cities.</p>
+                    <p class="project-detail">
+                        <strong>Problem:</strong> When you have several places to visit, it's hard to know which order to visit them in.
+                    </p>
+                    <p class="project-detail">
+                        <strong>Solution:</strong> It combines Dijkstra's algorithm to find the shortest path between
+                        cities, with a greedy approach that always visits the nearest stop next, then shows each leg of the
+                        trip and the total distance.
+                    </p>
+                    <ul class="skill-list">
+                        <li class="skill-tag">C++</li>
+                        <li class="skill-tag">Dijkstra's algorithm</li>
+                        <li class="skill-tag">Greedy algorithm</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://github.com/abd-alrhmanfayyad" target="_blank" rel="noopener">GitHub</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <img src="images/sms.webp" alt="School Management System logo" width="800" height="450"
+                        class="project-img">
+                    <div class="project-header">
+                        <h3>School Management System</h3>
+                        <span class="project-status">In progress</span>
+                    </div>
+                    <p class="project-desc">My graduation project: a bilingual (Arabic/English) system for managing a
+                        school.</p>
+                    <p class="project-detail">
+                        <strong>Problem:</strong> Schools often manage students, grades, and attendance across paper
+                        records and scattered files, which makes tracking hard and error-prone.
+                    </p>
+                    <p class="project-detail">
+                        <strong>Solution:</strong> One system with role-based access for admins, teachers, students, and
+                        parents, covering student records, classes, grades, and attendance. I'm building the backend API.
+                    </p>
+                    <ul class="skill-list">
+                        <li class="skill-tag">C#</li>
+                        <li class="skill-tag">ASP.NET Core Web API</li>
+                        <li class="skill-tag">EF Core</li>
+                        <li class="skill-tag">SQL Server</li>
+                        <li class="skill-tag">JWT</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://github.com/abd-alrhmanfayyad" target="_blank" rel="noopener">GitHub</a>
+                    </div>
+                </article>
+            </div>
         </section>
 
-        <section id="journey">
+        <section id="journey" class="section">
             <h2>Journey</h2>
         </section>
 
-        <section id="contact">
+        <section id="contact" class="section">
             <h2>Contact</h2>
         </section>
     </main>
