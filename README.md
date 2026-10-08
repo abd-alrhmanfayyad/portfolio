@@ -5,14 +5,12 @@ It introduces who I am, the skills I work with, my projects, and my learning jou
 
 **Live website:** https://abd-alrhmanfayyad.github.io/portfolio/
 
-
-
 ## Technologies used
 
 - HTML5 (semantic elements)
 - CSS3 (Flexbox, Grid, CSS variables, media queries)
 - Git and GitHub Pages
-
+- JavaScript (dark mode toggle)
 ## Features
 
 - Sticky navigation bar with smooth scrolling
@@ -20,6 +18,7 @@ It introduces who I am, the skills I work with, my projects, and my learning jou
 - Project cards with hover effects
 - Learning journey timeline
 - Downloadable CV
+- Dark/Light mode toggle (saved in the browser)
 
 ## Author
 

@@ -13,6 +13,35 @@
     --border: #e5e5e5;
 }
 
+[data-theme="dark"] {
+    --bg: #121212;
+    --text: #e8e8e6;
+    --text-muted: #a8a8a3;
+    --accent: #5dcaa5;
+    --border: #2e2e2e;
+}
+
+[data-theme="dark"] .btn-primary {
+    color: #0b0b0b;
+}
+
+body {
+    transition: background-color 300ms, color 300ms;
+}
+
+.theme-toggle {
+    background: none;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 2px 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.theme-toggle:hover {
+    border-color: var(--accent);
+}
+
 html {
     scroll-behavior: smooth;
     
