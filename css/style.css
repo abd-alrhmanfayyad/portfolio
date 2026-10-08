@@ -247,7 +247,7 @@ nav a:hover {
     font-weight: 600;
 
 }
-.project-links a:hover{
+.project-links a:hover,.timeline-link:hover{
 text-decoration: underline;
 }
 
@@ -260,6 +260,40 @@ text-decoration: underline;
     margin-bottom: 16px;
     border-radius: 10px;
 }
+
+.timeline{
+    list-style: none;
+    text-align: left;
+    border-left: 1px solid var(--border);
+    padding-left: 14px;
+}
+.timeline-item{
+    margin-bottom: 16px;
+    position: relative;
+}
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: -19px;
+    width: 10px;
+    height: 10px;
+    background-color: var(--accent);
+    border-radius: 50%;
+}
+
+.timeline-date{
+    font-size: 12px;
+    font-family: monospace;
+    color: var(--accent);
+}
+.timeline-text{color: var(--text-muted);}
+.timeline-link{
+    text-decoration: none;
+    color: var(--accent);
+}
+
+
 
 footer {
     border-top: solid 1px var(--border);
