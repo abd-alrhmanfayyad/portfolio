@@ -220,57 +220,69 @@ nav a:hover {
     padding: 15px;
     text-align: left;
 }
-.project-card:hover{
+
+.project-card:hover ,
+a.contact-card:hover {
     transform: translateY(-4px);
     border-color: var(--accent);
 }
-.project-status{
+
+.project-status {
     font-size: 12px;
     padding: 2px 10px;
     color: var(--accent);
     border: 1px solid var(--accent);
     border-radius: 100px;
 }
-.project-desc,.project-detail{
+
+.project-desc,
+.project-detail {
     color: var(--text-muted);
     margin-bottom: 8px;
 
 
 }
-.project-detail strong{
-  
+
+.project-detail strong {
+
     color: var(--text);
 }
-.project-links a{
+
+.project-links a {
     color: var(--accent);
     text-decoration: none;
     font-weight: 600;
 
 }
-.project-links a:hover,.timeline-link:hover{
-text-decoration: underline;
+
+.project-links a:hover,
+.timeline-link:hover {
+    text-decoration: underline;
 }
 
-.project-card .skill-list{
+.project-card .skill-list {
     justify-content: flex-start;
     margin: 12px 0;
 }
+
 .project-img {
     width: 100%;
     margin-bottom: 16px;
     border-radius: 10px;
 }
 
-.timeline{
+.timeline {
     list-style: none;
     text-align: left;
     border-left: 1px solid var(--border);
     padding-left: 14px;
 }
-.timeline-item{
+
+.timeline-item {
     margin-bottom: 16px;
     position: relative;
 }
+
 .timeline-item::before {
     content: "";
     position: absolute;
@@ -282,19 +294,52 @@ text-decoration: underline;
     border-radius: 50%;
 }
 
-.timeline-date{
+.timeline-date ,.contact-label{
     font-size: 12px;
     font-family: monospace;
     color: var(--accent);
 }
-.timeline-text{color: var(--text-muted);}
-.timeline-link{
+
+
+.timeline-text {
+    color: var(--text-muted);
+}
+
+.timeline-link {
     text-decoration: none;
     color: var(--accent);
 }
 
+.contact-intro {
+    color: var(--text-muted);
+   margin-bottom: 24px
+}
+
+address {
+    font-style: normal;
+}
 
 
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+gap: 16px;
+}
+
+.contact-card {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    transition: 300ms;
+    padding: 15px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;  
+    color: var(--text);
+}
+.contact-value{
+    overflow-wrap: anywhere;
+}
 footer {
     border-top: solid 1px var(--border);
     text-align: center;
@@ -339,7 +384,8 @@ footer {
     }
 
     .skills-grid,
-    .projects-grid {
+    .projects-grid,
+    .contact-grid {
 
         grid-template-columns: 1fr 1fr;
     }
