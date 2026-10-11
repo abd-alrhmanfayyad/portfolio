@@ -11,6 +11,7 @@
     --text-muted: #5f5e5a;
     --accent: #0f6e56;
     --border: #e5e5e5;
+    --border-strong: #cfcfcf;
 }
 
 [data-theme="dark"] {
@@ -19,6 +20,7 @@
     --text-muted: #a8a8a3;
     --accent: #5dcaa5;
     --border: #2e2e2e;
+    --border-strong: #3a3a3a;
 }
 
 [data-theme="dark"] .btn-primary {
@@ -44,8 +46,8 @@ body {
 
 html {
     scroll-behavior: smooth;
-    
-scroll-padding-top: 70px;
+
+    scroll-padding-top: 70px;
 }
 
 body {
@@ -82,7 +84,7 @@ nav {
     gap: 8px 16px;
     flex-wrap: wrap;
     justify-content: center;
-    
+
 }
 
 nav a {
@@ -255,7 +257,7 @@ nav a:hover {
     text-align: left;
 }
 
-.project-card:hover ,
+.project-card:hover,
 a.contact-card:hover {
     transform: translateY(-4px);
     border-color: var(--accent);
@@ -303,6 +305,7 @@ a.contact-card:hover {
     width: 100%;
     margin-bottom: 16px;
     border-radius: 10px;
+    border: 1px solid var(--border-strong);
 }
 
 .timeline {
@@ -328,7 +331,8 @@ a.contact-card:hover {
     border-radius: 50%;
 }
 
-.timeline-date ,.contact-label{
+.timeline-date,
+.contact-label {
     font-size: 12px;
     font-family: monospace;
     color: var(--accent);
@@ -346,7 +350,7 @@ a.contact-card:hover {
 
 .contact-intro {
     color: var(--text-muted);
-   margin-bottom: 24px
+    margin-bottom: 24px
 }
 
 address {
@@ -357,7 +361,7 @@ address {
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr;
-gap: 16px;
+    gap: 16px;
 }
 
 .contact-card {
@@ -368,12 +372,14 @@ gap: 16px;
     text-align: left;
     display: flex;
     flex-direction: column;
-    text-decoration: none;  
+    text-decoration: none;
     color: var(--text);
 }
-.contact-value{
+
+.contact-value {
     overflow-wrap: anywhere;
 }
+
 footer {
     border-top: solid 1px var(--border);
     text-align: center;
@@ -408,8 +414,9 @@ footer {
 
 @media (min-width: 768px) {
     nav {
-    gap: 24px;
-}
+        gap: 24px;
+    }
+
     .navbar {
         flex-direction: row;
         justify-content: space-between;
