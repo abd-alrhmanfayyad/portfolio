@@ -8,14 +8,17 @@ It introduces who I am, the skills I work with, my projects, and my learning jou
 ## Technologies used
 
 - HTML5 (semantic elements)
-- CSS3 (Flexbox, Grid, CSS variables, media queries)
+- CSS3 (Flexbox, Grid, CSS variables, media queries, 3D transforms)
 - Git and GitHub Pages
 - JavaScript (dark mode toggle)
+
 ## Features
 
 - Sticky navigation bar with smooth scrolling
 - Mobile-first, fully responsive layout
-- Project cards with hover effects
+- Full-screen sections on larger screens
+- Flip cards that show each project's problem, solution, and tech stack
+- Separate projects page with a grid that adapts to the screen size
 - Learning journey timeline
 - Downloadable CV
 - Dark/Light mode toggle (saved in the browser)
