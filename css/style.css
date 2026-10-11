@@ -296,7 +296,11 @@ a.contact-card:hover {
     font-weight: 600;
 
 }
-
+.view-all
+{
+    display: inline-block;
+    margin-top: 15px;
+}
 .project-links a:hover,
 .timeline-link:hover {
     text-decoration: underline;
