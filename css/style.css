@@ -46,8 +46,7 @@ body {
 
 html {
     scroll-behavior: smooth;
-
-    scroll-padding-top: 70px;
+    scroll-padding-top: 124px;
 }
 
 body {
@@ -296,11 +295,12 @@ a.contact-card:hover {
     font-weight: 600;
 
 }
-.view-all
-{
+
+.view-all {
     display: inline-block;
     margin-top: 15px;
 }
+
 .project-links a:hover,
 .timeline-link:hover {
     text-decoration: underline;
@@ -469,6 +469,10 @@ footer {
 
 
 @media (min-width: 768px) {
+    html {
+        scroll-padding-top: 60px;
+    }
+
     nav {
         gap: 24px;
     }
@@ -489,5 +493,16 @@ footer {
         grid-template-columns: 1fr 1fr;
     }
 
+    .hero,
+    .section {
+        min-height: calc(100vh - 60px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
+    .hero img,
+    .view-all {
+        align-self: center;
+    }
 }
